@@ -3,6 +3,50 @@
 Simple Dockerized Environment for Pimcore.<br>
 This project is based on [Pimcore Skeleton](https://github.com/pimcore/skeleton).
 
+**Pimcore Skeleton Project Structure**
+
+```
+pimcore-demo
++- app
+|  +- config
+|  |  +- local
+|  |  |  +- database.yml <--- DB Info
+|  |  +- ...
+|  |  +- config.yml <--- App Config
+|  |  +- ...
+|  +- Resources
+|  |  +- views
+|  |     +- Default
+|  |        +- default.html.php <--- Default View
+|  +- ...
++- bin
++- src
+|  +- AppBundle
+|     +- ...
+|     +- Controller
+|     |  +- DefaultController.php <--- Default Controller
+|     +- ...
++- var
+|  +- ...
+|  +- classes
+|     +- ...
+|     +- definition_[YOUR_CLASS].php <--- Class Definition
+|  +- logs
+|     +- dev.log
++- vendor
++- web <--- Root for Apache or NGINX
++- .editorconfig
++- .env.example
++- .gitattributes
++- .gitignore
++- .php_cs.dist
++- composer.json
++- composer.lock
++- docker-compose.yml
++- gpl-3.0.txt
++- README.md
+```
+
 ## Getting Started
 
 ### Requirements
@@ -53,50 +97,6 @@ docker-compose start
 ```
 
 ## Tips
-
-### Pimcore Project Structure
-
-```
-pimcore-demo
-+- app
-|  +- config
-|  |  +- local
-|  |  |  +- database.yml <--- DB Info
-|  |  +- ...
-|  |  +- config.yml <--- App Config
-|  |  +- ...
-|  +- Resources
-|  |  +- views
-|  |     +- Default
-|  |        +- default.html.php <--- Default view
-|  +- ...
-+- bin
-+- src
-|  +- AppBundle
-|     +- ...
-|     +- Controller
-|     |  +- DefaultController.php <--- Default controller
-|     +- ...
-+- var
-|  +- ...
-|  +- classes
-|     +- ...
-|     +- definition_[YOUR_CLASS].php <--- Class definition
-|  +- logs
-|     +- dev.log
-+- vendor
-+- web <--- Root for Apache or NGINX
-+- .editorconfig
-+- .env.example
-+- .gitattributes
-+- .gitignore
-+- .php_cs.dist
-+- composer.json
-+- composer.lock
-+- docker-compose.yml
-+- gpl-3.0.txt
-+- README.md
-```
 
 ### Start Pimcore Project from Scratch
 
